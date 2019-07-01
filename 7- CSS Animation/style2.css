@@ -1,0 +1,26 @@
+.newspaper{
+    /* text columns */
+    column-count: 3;
+
+/* control the space between the columns */
+    column-gap: 10px;
+
+    /* style the rule between columns */
+    /* column-rule-style: solid;
+    column-rule-width: 10px;
+column-rule-color: red; */
+
+column-rule: 2px solid lightblue;
+column-width: 100px;
+
+
+}
+.newspaper h1{
+    column-span: all;
+}
+img{
+    width: 200px;
+    display: inline;
+    float: left;
+    margin: 5px;
+}

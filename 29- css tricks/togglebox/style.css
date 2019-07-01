@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    overflow: hidden;
+   width: 100vw;
+   height: 30rem;
+
+}
+html{
+    font-size: 62.5%;
+}
+.rightNav{
+    position: absolute;
+    width: 30rem;
+    background-color: red;
+    right:-30rem;
+    height: 30rem;
+    font-size: 2rem;
+    padding: 1rem;
+    /* display: none; */
+    transition: right 1s cubic-bezier(.2,.89,.31,-0.81) ,
+    opacity 3s, 
+    border-radius 3s; 
+    /* transition: all 3s cubic-bezier(.87,1.95,.93,.11); */
+    opacity: 0;
+    border-radius: 50%;
+}
+.container>input{
+    display: none;
+}
+.container>label{
+    font-size: 3rem;
+    position: absolute;
+    right: 0.5rem;
+}
+.container>input:checked + .rightNav{
+    right:0rem; 
+    opacity: 1;
+    border-radius: 1rem;
+}
